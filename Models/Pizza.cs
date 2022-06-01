@@ -19,6 +19,7 @@
         public List<Pizza> pizzas { get; set; }
 
         public listaPizze() {
+
           pizzas = new List<Pizza>();
     }
     }
