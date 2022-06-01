@@ -22,8 +22,11 @@ body {
     justify-content: center!important;
 }
 
+
+
 .col img {
     height: 200px;
     object-fit: cover;
 }
+
 

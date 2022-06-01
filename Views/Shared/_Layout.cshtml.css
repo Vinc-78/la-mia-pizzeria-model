@@ -46,3 +46,14 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
+.navbar {
+    justify-content: center !important;
+}
+
+.col img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
