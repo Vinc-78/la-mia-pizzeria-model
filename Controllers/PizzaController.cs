@@ -8,7 +8,7 @@ namespace la_mia_pizzeria_static.Controllers
         public static listaPizze pizze;
         public IActionResult Index()
         {
-           pizze = new listaPizze();
+            pizze = new listaPizze();
 
             Pizza pizza1 = new Pizza()
             {
@@ -24,7 +24,7 @@ namespace la_mia_pizzeria_static.Controllers
 
             Pizza pizza2 = new Pizza()
             {
-                Id="2",
+                Id = "2",
                 Nome = "Filetto",
                 Descrizione = "Pizza con pomodorini tagliatti a fette",
                 ImgPath = "/img/pizza2.jpg",
@@ -46,18 +46,16 @@ namespace la_mia_pizzeria_static.Controllers
 
             pizze.pizzas.Add(pizza3);
 
-
-
             return View(pizze);
         }
 
 
         public IActionResult Show(int id)
         {
-            foreach (var ele in pizze.pizzas) 
+            foreach (var ele in pizze.pizzas)
             {
-                if (ele.Id == Convert.ToString(id)) { return View("Show", pizze.pizzas[id-1]); }
-                
+                if (ele.Id == Convert.ToString(id)) { return View("Show", pizze.pizzas[id - 1]); }
+
             }
 
             return NotFound(" La pizza con l'id " + id + " non è stato trovato ");
